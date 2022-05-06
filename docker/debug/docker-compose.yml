@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ../../html:/var/www/html:delegated
+      - ~/.composer:/home/root/.composer:delegated
+    ports:
+      - "8080:80"

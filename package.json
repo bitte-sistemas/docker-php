@@ -1,0 +1,9 @@
+{
+  "name": "docker-php",
+  "version": "0.0.1",
+  "description": "VS Code + Docker + PHP + XDebug",
+  "scripts": {
+    "debug:start": "DOCKER_BUILDKIT=1 docker compose -f docker/debug/docker-compose.yml up -d --build",
+    "debug:stop": "DOCKER_BUILDKIT=1 docker compose -f docker/debug/docker-compose.yml down -v"
+  }
+}
