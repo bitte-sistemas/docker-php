@@ -8,3 +8,10 @@ services:
       - ~/.composer:/home/root/.composer:delegated
     ports:
       - "8080:80"
+    networks:
+      - movn
+
+networks:
+  movn:
+    external: true
+    name: movn
